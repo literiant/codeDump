@@ -21,7 +21,7 @@ int main()
     {
         // 步骤1：找第i行的最大值
         int row_max = arr[i][0];
-        for (int j = 1; j < m; j++)
+        for (int j = 1; j < m; j++) // 以0为初始值，从1开始遍历 减少循环次数.
         {
             if (arr[i][j] > row_max)
             {
